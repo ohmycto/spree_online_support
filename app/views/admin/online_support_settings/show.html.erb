@@ -1,0 +1,18 @@
+<%= render :partial => 'admin/shared/configuration_menu' %>
+
+<h1><%= t("online_support") %></h1>
+
+<table>
+  <tr>
+    <td><%= t('enable_online_support') %>:</td>
+    <td><%= Spree::OnlineSupport::Config[:enabled] ? t('yes') : t('no') %></td>
+  </tr>
+  <tr>
+    <td>Zopim.com <%= t('auth_key') %>:</td>
+    <td>'<%= Spree::OnlineSupport::Config[:zopim_key] %>'</td>
+  </tr>
+</table>
+
+<p><%= link_to_with_icon 'edit', t("edit"), edit_admin_online_support_settings_path %></p>
+
+
