@@ -10,7 +10,5 @@ class SpreeOnlineSupportHooks < Spree::ThemeSupport::HookListener
     %(<li<%== ' class="active"' if controller.controller_name == 'online_support_settings' %>><%= link_to t("online_support"), admin_online_support_settings_path %></li>)
   end
 
-  insert_after :inside_head do
-    %(<%= render :partial => 'shared/online_support' %>)
-  end
+  insert_after :inside_head, 'shared/online_support'
 end
