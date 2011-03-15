@@ -1,7 +1,9 @@
-<% if Spree::OnlineSupport::Config[:enabled] and not Spree::OnlineSupport::Config[:zopim_key].empty? %>
-    <!-- Start of Zopim Live Chat Script -->
+<% if Spree::OnlineSupport::Config[:enabled] && Spree::OnlineSupport::Config[:zopim_key].present? %>
+  <!-- Start of Zopim Live Chat Script -->
+  <noindex>
     <script type="text/javascript">
         document.write(unescape("%3Cscript src='" + document.location.protocol + "//zopim.com/?<%= Spree::OnlineSupport::Config[:zopim_key] %>' charset='utf-8' type='text/javascript'%3E%3C/script%3E"));
     </script>
-    <!-- End of Zopim Live Chat Script -->
+  </noindex>
+  <!-- End of Zopim Live Chat Script -->
 <% end %>
