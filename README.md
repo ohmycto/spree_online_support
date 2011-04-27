@@ -1,13 +1,10 @@
 SpreeOnlineSupport
 ==================
 
-Introduction goes here.
+Adds integration with online support services, like zopim.com
 
 
-Example
-=======
-
-Example goes here.
 
 
-Copyright (c) 2011 [name of extension creator], released under the New BSD License
+
+Copyright (c) 2011 "Сервис и Консалтинг", released under the New BSD License
