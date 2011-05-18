@@ -5,11 +5,11 @@
 <%= form_tag(admin_online_support_settings_path, :method => :put) do %>
 
   <p>
-	<label><%= t('enable_online_support') %>:</label>
+	<%= label_tag 'preferences[enabled]', t('enable_online_support') %>:
 	<%= check_box_tag('preferences[enabled]', '1', Spree::OnlineSupport::Config[:enabled]) %>
   </p>
   <p>
-	<label>Zopim.com <%= t('auth_key') %>:</label>
+	<%= label_tag 'preferences[zopim_key]', "Zopim.com" + t('auth_key') %>:
 	<%= text_field_tag('preferences[zopim_key]', Spree::OnlineSupport::Config[:zopim_key])%>
   </p>
   <p class="form-buttons">
