@@ -3,7 +3,7 @@ class SpreeOnlineSupportHooks < Spree::ThemeSupport::HookListener
     %(<tr>
       <td><%= link_to t("online_support"), admin_online_support_settings_path %></td>
       <td><%= t("online_support_description") %></td>
-    </ tr>)
+    </tr>)
   end
 
   insert_after :admin_configurations_sidebar_menu do
