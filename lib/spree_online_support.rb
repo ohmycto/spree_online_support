@@ -1,8 +1,8 @@
 require 'spree_core'
-require 'spree_online_support_hooks'
 
 module SpreeOnlineSupport
   class Engine < Rails::Engine
+    engine_name 'spree_online_support'
 
     config.autoload_paths += %W(#{config.root}/lib)
 
