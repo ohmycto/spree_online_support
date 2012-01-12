@@ -18,7 +18,7 @@ Deface::Override.new(
 Deface::Override.new(
   :virtual_path => "layouts/spree_application",
   :name => "spree_online_support_inside_head",
-  :insert_bottom => "[data-hook='inside_head'], #inside_head[data-hook]",
+  :insert_bottom => "body",
   :partial => "shared/online_support",
   :disabled => false)
 
