@@ -1,6 +1,8 @@
 <%= render :partial => 'spree/admin/shared/configuration_menu' %>
 
-<h1><%= t("online_support") %></h1>
+<% content_for :page_title do %>
+  <%= t("online_support") %>
+<% end %>
 
 <table>
   <tr>
