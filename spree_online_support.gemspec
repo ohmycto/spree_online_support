@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_online_support'
-  s.version     = '0.70.0'
+  s.version     = '1.3.0'
   s.summary     = 'Adds integration with online support services, like zopim.com'
   #s.description = 'Add (optional) gem description here'
   s.required_ruby_version = '>= 1.8.7'
